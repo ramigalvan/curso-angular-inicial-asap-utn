@@ -1,0 +1,9 @@
+<h2>Lista de items</h2>
+<ul>
+    @for(item of items; track item.id){
+        <li>
+            <p>{{item.name}}</p>
+            <span>is completed?: {{item.isCompleted}}</span>
+        </li>
+    }
+</ul>
